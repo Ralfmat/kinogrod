@@ -1,0 +1,80 @@
+﻿@inherits LayoutComponentBase
+
+<div id="app">
+    <header class="top-bar">
+        <div class="logo">
+            <a href="">
+                <img src="img/camera.png" />
+            </a>
+
+            <h1>
+                <a href="" class="logo_text">
+                Kinogród
+                </a>
+            </h1>
+        </div>
+
+        <div class="links">
+            <a href="/" class="nav-tab">
+                <div>
+                    Strona główna
+                </div>
+
+            </a>
+            <a href="filmy" class="nav-tab">
+                <!-- href odpowiada za przekierowanie do podstrony
+            np. localhost:5000/filmy !-->
+                <div>
+                    Filmy
+                </div>
+            </a>
+
+            <a href="gatunki" class="nav-tab">
+                <div>
+                    Gatunki
+                </div>
+            </a>
+
+            <a href="top-filmy" class="nav-tab">
+                <div>
+                    Top filmy
+                </div>
+            </a>
+        </div>
+        <div class="searchField">
+            <form>
+                <input />
+                <button>
+                    Szukaj
+                </button>
+            </form>
+        </div>
+        <div class="accountButtons">
+            <button>
+                Zaloguj się
+            </button>
+            <button>
+                Zarejestruj się
+            </button>
+        </div>
+
+
+        <!-- Tu będzie EditForm do szukania filmów!-->
+    </header>
+
+    <div class="content">
+        @Body
+    </div>
+
+    <footer>
+        &copy; Kinogród @DateTime.UtcNow.Year
+    </footer>
+</div>
+
+@code {
+    private string? SearchString;
+
+    private void Search()
+    {
+    }
+}

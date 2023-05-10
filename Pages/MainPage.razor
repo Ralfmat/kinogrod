@@ -1,0 +1,34 @@
+@page "/"
+
+@using kinoUI.Data
+@using kinoUI.Models
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager
+
+<div class="main-page">
+    <h1>Polecane</h1>
+    <div class="movies-content">
+        <div class="movie-box">
+            @if(filmy != null)
+            {
+                @foreach (var film in filmy)
+                {
+                    <li style="background-image: url('@film.ImageUrl')">
+                        <div class="film-info">
+                            <span class="title">@film.Title</span>
+                            <span class="release-year">@film.ReleaseYear</span>
+                        </div>
+                    </li>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+        List<Film> filmy = new();
+        protected override async Task OnInitializedAsync()
+        {
+            filmy = await HttpClient.GetFromJsonAsync<List<Film>>(NavigationManager.BaseUri + "filmyData");
+        }
+}

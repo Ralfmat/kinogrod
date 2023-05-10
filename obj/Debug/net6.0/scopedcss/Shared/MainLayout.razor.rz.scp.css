@@ -1,0 +1,42 @@
+.top-bar[b-st4fj1d944] {
+    display: flex;
+    background-color: #1d1d1b;
+}
+
+.logo[b-st4fj1d944] {
+    display: flex;
+    color: orange;
+}
+.logo > a > img[b-st4fj1d944] {
+    width: 4rem;
+}
+
+.links[b-st4fj1d944] {
+    display: flex;
+    align-items: center;
+}
+.nav-tab[b-st4fj1d944] {
+    color: yellow;
+    text-decoration: none;
+    padding-left: 10rem;
+}
+
+.logo_text[b-st4fj1d944] {
+    color: yellow;
+    text-decoration: none;
+    padding-top: 200px;
+}
+
+.searchField[b-st4fj1d944] {
+
+}
+
+.accoundButtons[b-st4fj1d944] {
+
+}
+
+.content[b-st4fj1d944] {
+    background-color: #383836;
+    color: aliceblue;
+    height: 150vh;
+}
