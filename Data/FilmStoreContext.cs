@@ -7,7 +7,7 @@ public class FilmStoreContext : DbContext
 {
     public FilmStoreContext(DbContextOptions<FilmStoreContext> options) : base(options)
     {
-        /////TEST
+
     }
 
     public DbSet<Film> Film { get; set; }
