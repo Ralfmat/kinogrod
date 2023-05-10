@@ -1,0 +1,3 @@
+namespace kinoUI.Models;
+
+//aaa

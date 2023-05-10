@@ -1,0 +1,30 @@
+@page "/filmy"
+@using kinoUI.Models
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager
+
+<div class="filmy-page">
+    Filmy
+    @if (filmy != null)
+    {
+        @foreach (var film in filmy)
+        {
+            var filmDetail = filmyDetails.FirstOrDefault(fd => fd.Id == film.FilmDetailsId);
+            @if (filmDetail != null)
+            {
+                <li>@film.Title</li>
+                <li>@filmDetail.LengthInMinutes</li>
+            }
+        }
+    }
+</div>
+
+@code {
+    List<Film> filmy = new();
+    List<FilmDetails> filmyDetails = new();
+    protected override async Task OnInitializedAsync()
+    {
+        filmyDetails = await HttpClient.GetFromJsonAsync<List<FilmDetails>>(NavigationManager.BaseUri + "filmyDetailsData");
+        filmy = await HttpClient.GetFromJsonAsync<List<Film>>(NavigationManager.BaseUri + "filmyData");
+    }
+}

@@ -1,0 +1,42 @@
+.top-bar {
+    display: flex;
+    background-color: #1d1d1b;
+}
+
+.logo {
+    display: flex;
+    color: orange;
+}
+.logo > a > img {
+    width: 4rem;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+.nav-tab {
+    color: yellow;
+    text-decoration: none;
+    padding-left: 10rem;
+}
+
+.logo_text {
+    color: yellow;
+    text-decoration: none;
+    padding-top: 200px;
+}
+
+.searchField {
+
+}
+
+.accoundButtons {
+
+}
+
+.content {
+    background-color: #383836;
+    color: aliceblue;
+    height: 150vh;
+}
