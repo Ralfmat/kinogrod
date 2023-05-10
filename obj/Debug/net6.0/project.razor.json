@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\user\\Desktop\\kinoUI\\kinoUI.csproj",
+  "FilePath": "c:\\Users\\user\\Desktop\\kinogrod\\kinoUI.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -203,39 +203,6 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "kinoUI.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1691491227,
-        "Kind": "Components.Component",
-        "Name": "kinoUI.kinogrod.App",
-        "AssemblyName": "kinoUI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kinoUI.kinogrod.App"
-        }
-      },
-      {
-        "HashCode": -1163940560,
-        "Kind": "Components.Component",
-        "Name": "kinoUI.kinogrod.App",
-        "AssemblyName": "kinoUI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "kinoUI.kinogrod.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "kinoUI.kinogrod.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -16526,54 +16493,44 @@
   "RootNamespace": "kinoUI",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\user\\Desktop\\kinoUI\\Pages\\_Layout.cshtml",
-      "TargetPath": "Pages\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\user\\Desktop\\kinoUI\\Pages\\Filmy.razor",
-      "TargetPath": "Pages\\Filmy.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\user\\Desktop\\kinoUI\\kinogrod\\App.razor",
-      "TargetPath": "kinogrod\\App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\user\\Desktop\\kinoUI\\App.razor",
-      "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\user\\Desktop\\kinoUI\\Shared\\MainLayout.razor",
+      "FilePath": "c:\\Users\\user\\Desktop\\kinogrod\\Shared\\MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\user\\Desktop\\kinoUI\\Pages\\_Host.cshtml",
+      "FilePath": "c:\\Users\\user\\Desktop\\kinogrod\\Pages\\_Host.cshtml",
       "TargetPath": "Pages\\_Host.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\user\\Desktop\\kinoUI\\Pages\\MainPage.razor",
-      "TargetPath": "Pages\\MainPage.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\user\\Desktop\\kinoUI\\_Imports.razor",
+      "FilePath": "c:\\Users\\user\\Desktop\\kinogrod\\_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
     },
     {
-      "FilePath": "c:\\Users\\user\\Desktop\\kinoUI\\Pages\\Error.cshtml",
+      "FilePath": "c:\\Users\\user\\Desktop\\kinogrod\\Pages\\Filmy.razor",
+      "TargetPath": "Pages\\Filmy.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\user\\Desktop\\kinogrod\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\user\\Desktop\\kinoUI\\kinogrod\\_Imports.razor",
-      "TargetPath": "kinogrod\\_Imports.razor",
-      "FileKind": "componentImport"
+      "FilePath": "c:\\Users\\user\\Desktop\\kinogrod\\Pages\\MainPage.razor",
+      "TargetPath": "Pages\\MainPage.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\user\\Desktop\\kinogrod\\Pages\\_Layout.cshtml",
+      "TargetPath": "Pages\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\user\\Desktop\\kinogrod\\App.razor",
+      "TargetPath": "App.razor",
+      "FileKind": "component"
     }
   ],
   "SerializationFormat": "0.2"
