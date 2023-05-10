@@ -12,6 +12,7 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+<<<<<<< Updated upstream
         "HashCode": -1772395204,
         "Kind": "Components.Component",
         "Name": "kinoUI.Pages.Filmy",
@@ -240,6 +241,8 @@
         }
       },
       {
+=======
+>>>>>>> Stashed changes
         "HashCode": 1065816939,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView",
