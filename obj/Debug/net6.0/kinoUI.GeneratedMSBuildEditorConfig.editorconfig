@@ -8,49 +8,41 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = kinoUI
 build_property.RootNamespace = kinoUI
-build_property.ProjectDir = c:\Users\user\Desktop\kinoUI\
+build_property.ProjectDir = c:\Users\user\Desktop\kinogrod\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\user\Desktop\kinoUI
+build_property.MSBuildProjectDirectory = c:\Users\user\Desktop\kinogrod
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/user/Desktop/kinoUI/App.razor]
+[c:/Users/user/Desktop/kinogrod/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/user/Desktop/kinoUI/kinogrod/App.razor]
-build_metadata.AdditionalFiles.TargetPath = a2lub2dyb2RcQXBwLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/user/Desktop/kinoUI/kinogrod/_Imports.razor]
-build_metadata.AdditionalFiles.TargetPath = a2lub2dyb2RcX0ltcG9ydHMucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/user/Desktop/kinoUI/_Imports.razor]
+[c:/Users/user/Desktop/kinogrod/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/user/Desktop/kinoUI/Pages/Filmy.razor]
+[c:/Users/user/Desktop/kinogrod/Pages/Filmy.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlsbXkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-6qvl1dkfdw
 
-[c:/Users/user/Desktop/kinoUI/Pages/MainPage.razor]
+[c:/Users/user/Desktop/kinogrod/Pages/MainPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpblBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-zt4f6o4lhi
 
-[c:/Users/user/Desktop/kinoUI/Shared/MainLayout.razor]
+[c:/Users/user/Desktop/kinogrod/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-st4fj1d944
 
-[c:/Users/user/Desktop/kinoUI/Pages/Error.cshtml]
+[c:/Users/user/Desktop/kinogrod/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/user/Desktop/kinoUI/Pages/_Host.cshtml]
+[c:/Users/user/Desktop/kinogrod/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/user/Desktop/kinoUI/Pages/_Layout.cshtml]
+[c:/Users/user/Desktop/kinogrod/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
