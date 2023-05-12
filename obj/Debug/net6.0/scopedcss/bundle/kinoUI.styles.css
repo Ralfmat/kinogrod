@@ -1,5 +1,26 @@
 /* _content/kinoUI/Pages/Filmy.razor.rz.scp.css */
 .filmy-page[b-6qvl1dkfdw] {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20vw;
+}
+
+.film-box[b-6qvl1dkfdw] {
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    margin: 10px;
+    width: 50vw;
+}
+
+.film-info[b-6qvl1dkfdw] {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.film-genre[b-6qvl1dkfdw] {
+    display: flex;
+    flex-direction: row;
 }
 /* _content/kinoUI/Pages/MainPage.razor.rz.scp.css */
 .main-page[b-zt4f6o4lhi] {

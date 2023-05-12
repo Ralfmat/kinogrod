@@ -1,2 +1,23 @@
 .filmy-page[b-6qvl1dkfdw] {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20vw;
+}
+
+.film-box[b-6qvl1dkfdw] {
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    margin: 10px;
+    width: 50vw;
+}
+
+.film-info[b-6qvl1dkfdw] {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.film-genre[b-6qvl1dkfdw] {
+    display: flex;
+    flex-direction: row;
 }

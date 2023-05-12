@@ -1,2 +1,23 @@
 .filmy-page {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20vw;
+}
+
+.film-box {
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    margin: 10px;
+    width: 50vw;
+}
+
+.film-info {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.film-genre {
+    display: flex;
+    flex-direction: row;
 }

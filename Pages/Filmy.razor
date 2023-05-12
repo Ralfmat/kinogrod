@@ -13,7 +13,34 @@
             @foreach (var film in filmy)
             {
                 <div class="film-box">
-                    <img src="@film.ImageUrl" width="50vw">
+                    <div class="film-img">
+                        <img src="@film.ImageUrl" width="100vw">
+                    </div>
+                    <div class="film-info">
+                        <div class="film-title">
+                            @film.Title
+                            @if (film.OriginalTitle != film.Title)
+                            {
+                                <div class="film-og-title">
+                                    @film.OriginalTitle
+                                </div>
+                            }
+                        </div>
+                        <div class="film-release-date">
+                            @film.ReleaseYear
+                        </div>
+                        <div class="film-genre">
+                            gatunek&nbsp
+                            <div class="film-genre-display">
+                                @film.FilmGenre
+                            </div>
+                        </div>
+                    </div>
+                    <div class="film-rating">
+                        <div class="film-rate">
+
+                        </div>
+                    </div>
                 </div>
             }
         }
