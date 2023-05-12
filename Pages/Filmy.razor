@@ -4,15 +4,20 @@
 @inject NavigationManager NavigationManager
 
 <div class="filmy-page">
-    Filmy
-    @if (filmy != null)
-    {
-        @foreach (var film in filmy)
+    <div class="filter-container">
+
+    </div>
+    <div class="content-container">
+        @if (filmy != null)
         {
-            <li>@film.Title</li>
-            <li>@film.LengthInMinutes</li>
+            @foreach (var film in filmy)
+            {
+                <div class="film-box">
+                    <img src="@film.ImageUrl" width="50vw">
+                </div>
+            }
         }
-    }
+    </div>
 </div>
 
 @code {

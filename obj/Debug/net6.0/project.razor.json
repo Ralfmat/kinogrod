@@ -13,43 +13,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -1315091902,
-        "Kind": "Components.Component",
-        "Name": "kinoUI.Pages.MainPage",
-        "AssemblyName": "kinoUI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MainPage"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "kinoUI.Pages.MainPage",
-          "Common.TypeNameIdentifier": "MainPage",
-          "Common.TypeNamespace": "kinoUI.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 24543477,
-        "Kind": "Components.Component",
-        "Name": "kinoUI.Pages.MainPage",
-        "AssemblyName": "kinoUI",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "kinoUI.Pages.MainPage"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "kinoUI.Pages.MainPage",
-          "Common.TypeNameIdentifier": "MainPage",
-          "Common.TypeNamespace": "kinoUI.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": 1722481900,
         "Kind": "Components.Component",
         "Name": "kinoUI.Pages.Filmy",
@@ -81,6 +44,43 @@
         "Metadata": {
           "Common.TypeName": "kinoUI.Pages.Filmy",
           "Common.TypeNameIdentifier": "Filmy",
+          "Common.TypeNamespace": "kinoUI.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1315091902,
+        "Kind": "Components.Component",
+        "Name": "kinoUI.Pages.MainPage",
+        "AssemblyName": "kinoUI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MainPage"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "kinoUI.Pages.MainPage",
+          "Common.TypeNameIdentifier": "MainPage",
+          "Common.TypeNamespace": "kinoUI.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 24543477,
+        "Kind": "Components.Component",
+        "Name": "kinoUI.Pages.MainPage",
+        "AssemblyName": "kinoUI",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "kinoUI.Pages.MainPage"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "kinoUI.Pages.MainPage",
+          "Common.TypeNameIdentifier": "MainPage",
           "Common.TypeNamespace": "kinoUI.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
