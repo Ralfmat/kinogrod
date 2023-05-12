@@ -1,131 +1,131 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\kinoUI.bundle.scp.css",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\kinoUI.bundle.scp.css",
       "PackagePath": "staticwebassets\\kinoUI.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\css\\open-iconic\\README.md",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\css\\open-iconic\\README.md",
       "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\camera.png",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\camera.png",
       "PackagePath": "staticwebassets\\img\\camera.png"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\filmy\\buntownik_z_wyboru.jpg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\filmy\\buntownik_z_wyboru.jpg",
       "PackagePath": "staticwebassets\\img\\filmy\\buntownik_z_wyboru.jpg"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\filmy\\chlopiec_w_pasiastej_pizamie.jpg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\filmy\\chlopiec_w_pasiastej_pizamie.jpg",
       "PackagePath": "staticwebassets\\img\\filmy\\chlopiec_w_pasiastej_pizamie.jpg"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\filmy\\forest_gump.jpg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\filmy\\forest_gump.jpg",
       "PackagePath": "staticwebassets\\img\\filmy\\forest_gump.jpg"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\filmy\\gladiator.jpg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\filmy\\gladiator.jpg",
       "PackagePath": "staticwebassets\\img\\filmy\\gladiator.jpg"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\filmy\\leon_zawodowiec.jpg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\filmy\\leon_zawodowiec.jpg",
       "PackagePath": "staticwebassets\\img\\filmy\\leon_zawodowiec.jpg"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\filmy\\lista_schindlera.jpg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\filmy\\lista_schindlera.jpg",
       "PackagePath": "staticwebassets\\img\\filmy\\lista_schindlera.jpg"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\filmy\\lot_nad_kukulczym_gniazdem.jpg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\filmy\\lot_nad_kukulczym_gniazdem.jpg",
       "PackagePath": "staticwebassets\\img\\filmy\\lot_nad_kukulczym_gniazdem.jpg"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\filmy\\nietykalni.jpg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\filmy\\nietykalni.jpg",
       "PackagePath": "staticwebassets\\img\\filmy\\nietykalni.jpg"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\filmy\\pianista.jpg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\filmy\\pianista.jpg",
       "PackagePath": "staticwebassets\\img\\filmy\\pianista.jpg"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\filmy\\przelecz_ocalonych.jpg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\filmy\\przelecz_ocalonych.jpg",
       "PackagePath": "staticwebassets\\img\\filmy\\przelecz_ocalonych.jpg"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\filmy\\rain_man.jpg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\filmy\\rain_man.jpg",
       "PackagePath": "staticwebassets\\img\\filmy\\rain_man.jpg"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\filmy\\sila_spokoju.jpg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\filmy\\sila_spokoju.jpg",
       "PackagePath": "staticwebassets\\img\\filmy\\sila_spokoju.jpg"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\filmy\\skazani_na_shawshank.jpg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\filmy\\skazani_na_shawshank.jpg",
       "PackagePath": "staticwebassets\\img\\filmy\\skazani_na_shawshank.jpg"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\filmy\\szeregowiec_ryan.jpg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\filmy\\szeregowiec_ryan.jpg",
       "PackagePath": "staticwebassets\\img\\filmy\\szeregowiec_ryan.jpg"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\filmy\\truman_show.jpg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\filmy\\truman_show.jpg",
       "PackagePath": "staticwebassets\\img\\filmy\\truman_show.jpg"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\filmy\\w_pogoni_za_szczesciem.jpg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\filmy\\w_pogoni_za_szczesciem.jpg",
       "PackagePath": "staticwebassets\\img\\filmy\\w_pogoni_za_szczesciem.jpg"
     },
     {
-      "Id": "C:\\Users\\Krzyś\\Documents\\GitHub\\kinogrod\\wwwroot\\img\\filmy\\zielona_mila.jpg",
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\filmy\\zielona_mila.jpg",
       "PackagePath": "staticwebassets\\img\\filmy\\zielona_mila.jpg"
     },
     {

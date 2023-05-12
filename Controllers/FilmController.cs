@@ -9,9 +9,9 @@ namespace kinoUI.Controllers;
 [ApiController]
 public class FilmController : Controller
 {
-    private readonly FilmStoreContext _db;
+    private readonly DatabaseContext _db;
     
-    public FilmController(FilmStoreContext db)
+    public FilmController(DatabaseContext db)
     {
         _db = db;
     } 
@@ -19,7 +19,7 @@ public class FilmController : Controller
     [HttpGet]
     public async Task<ActionResult<List<Film>>> GetFilm()
     {
-        return (await _db.Film.ToListAsync());
+        return (await _db.Films.ToListAsync());
     }
 
 }

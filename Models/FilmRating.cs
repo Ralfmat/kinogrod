@@ -1,6 +1,16 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace kinoUI.Models;
 
-//aaabaaa
+public class FilmRating
+{
+    public int Id { get; set; }
 
-// godzina 20:14
-//ddd
+    [Range(0, 5, ErrorMessage = "Ocena filmu musi być w przedziale od 0 do 5!")]
+    public int? Rate { get; set; }
+    public string? Comment { get; set; }
+    public int FilmId { get; set; }
+    public Film Film { get; set; }
+    public int UserId { get; set; }
+    public User User { get; set; }
+}

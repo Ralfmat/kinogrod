@@ -9,41 +9,41 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = kinoUI
 build_property.RootNamespace = kinoUI
-build_property.ProjectDir = C:\Users\Krzyś\Documents\GitHub\kinogrod\
+build_property.ProjectDir = C:\Users\Mateusz\Desktop\.Net\kinogrod\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Krzyś\Documents\GitHub\kinogrod
+build_property.MSBuildProjectDirectory = C:\Users\Mateusz\Desktop\.Net\kinogrod
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Krzyś/Documents/GitHub/kinogrod/App.razor]
+[C:/Users/Mateusz/Desktop/.Net/kinogrod/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Krzyś/Documents/GitHub/kinogrod/_Imports.razor]
+[C:/Users/Mateusz/Desktop/.Net/kinogrod/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Krzyś/Documents/GitHub/kinogrod/Pages/Filmy.razor]
+[C:/Users/Mateusz/Desktop/.Net/kinogrod/Pages/Filmy.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlsbXkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-6qvl1dkfdw
 
-[C:/Users/Krzyś/Documents/GitHub/kinogrod/Pages/MainPage.razor]
+[C:/Users/Mateusz/Desktop/.Net/kinogrod/Pages/MainPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpblBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-zt4f6o4lhi
 
-[C:/Users/Krzyś/Documents/GitHub/kinogrod/Shared/MainLayout.razor]
+[C:/Users/Mateusz/Desktop/.Net/kinogrod/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-st4fj1d944
 
-[C:/Users/Krzyś/Documents/GitHub/kinogrod/Pages/Error.cshtml]
+[C:/Users/Mateusz/Desktop/.Net/kinogrod/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Krzyś/Documents/GitHub/kinogrod/Pages/_Host.cshtml]
+[C:/Users/Mateusz/Desktop/.Net/kinogrod/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Krzyś/Documents/GitHub/kinogrod/Pages/_Layout.cshtml]
+[C:/Users/Mateusz/Desktop/.Net/kinogrod/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

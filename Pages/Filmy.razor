@@ -9,22 +9,16 @@
     {
         @foreach (var film in filmy)
         {
-            var filmDetail = filmyDetails.FirstOrDefault(fd => fd.Id == film.FilmDetailsId);
-            @if (filmDetail != null)
-            {
-                <li>@film.Title</li>
-                <li>@filmDetail.LengthInMinutes</li>
-            }
+            <li>@film.Title</li>
+            <li>@film.LengthInMinutes</li>
         }
     }
 </div>
 
 @code {
     List<Film> filmy = new();
-    List<FilmDetails> filmyDetails = new();
     protected override async Task OnInitializedAsync()
     {
-        filmyDetails = await HttpClient.GetFromJsonAsync<List<FilmDetails>>(NavigationManager.BaseUri + "filmyDetailsData");
         filmy = await HttpClient.GetFromJsonAsync<List<Film>>(NavigationManager.BaseUri + "filmyData");
     }
 }

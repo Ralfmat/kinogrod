@@ -1,16 +1,17 @@
-﻿// using Microsoft.EntityFrameworkCore;
+﻿using kinoUI.Models;
+using Microsoft.EntityFrameworkCore;
 
-// namespace kinoUI.Data;
+namespace kinoUI.Data;
 
-// public class DatabaseContext : DbContext
-// {
+public class DatabaseContext : DbContext
+{
 
-//     public DatabaseContext(Parameters)
-//     {
+    public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
+    {
         
-//     }
+    }
 
 
-//     public DbSet<Film> Film { get; set; }
-//     public DbSet<FilmDetails> FilmDetails { get; set; }
-// }
+    public DbSet<Film> Films { get; set; }
+    public DbSet<FilmRating> FilmRatings { get; set; }
+}

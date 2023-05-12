@@ -6,16 +6,12 @@ public class Film
 
     public string Title { get; set; }
 
-    public int ReleaseYear { get; set; }
+    public int? ReleaseYear { get; set; }
 
-    public string ImageUrl { get; set; }
+    public string? ImageUrl { get; set; }
 
-    public string FilmGenre { get; set; }
-
-    public int FilmDetailsId { get; set; }
-
-    public FilmDetails FilmDetails { get; set; }
-    
-    //public int FilmRatingId { get; set;}
-    //public listfilmrating filmrating { get; set; }
+    public string? FilmGenre { get; set; }
+    public string? Description { get; set; }
+    public int? LengthInMinutes { get; set; }
+    public ICollection<FilmRating> FilmRatings { get; set; }
 }

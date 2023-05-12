@@ -12,8 +12,7 @@ builder.Services.AddServerSideBlazor();
 //builder.Services.AddSingleton<FilmService>();
 
 builder.Services.AddHttpClient();
-builder.Services.AddSqlite<FilmStoreContext>("Data Source=film.db");
-builder.Services.AddSqlite<FilmDetailsStoreContext>("Data Source=film.db");
+builder.Services.AddSqlite<DatabaseContext>("Data Source=film.db");
 
 var app = builder.Build();
 
@@ -36,12 +35,12 @@ app.MapFallbackToPage("/_Host");
 
 app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
 
-//Initialize database
+// Initialize database
 
 var scopeFactory = app.Services.GetRequiredService<IServiceScopeFactory>();
 using(var scope = scopeFactory.CreateScope())
 {
-    var db = scope.ServiceProvider.GetRequiredService<FilmStoreContext>();
+    var db = scope.ServiceProvider.GetRequiredService<DatabaseContext>();
     if(db.Database.EnsureCreated())
     {
         SeedData.Initialize(db);
