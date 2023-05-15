@@ -8,7 +8,7 @@
 .film-box[b-6qvl1dkfdw] {
     display: flex;
     flex-direction: row;
-    background-color: rgb(90, 90, 90);
+    background-color: rgb(39, 39, 39);
     border-radius: 1rem;    
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -19,6 +19,16 @@
     margin: 1rem;
 }
 
+.film-img:hover[b-6qvl1dkfdw] {
+    -webkit-filter: brightness(60%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
 .film-img > img[b-6qvl1dkfdw] {
     width: 10vw;
     border-radius: 1rem;
@@ -26,14 +36,29 @@
 
 .film-info[b-6qvl1dkfdw] {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    justify-content: space-between;
     margin: 2rem;
+}
+
+.film-title[b-6qvl1dkfdw] {
+    font-size: 2rem;
+}
+
+.film-og-title[b-6qvl1dkfdw] {
+    font-size: 1.3rem;
+}
+
+.film-info-bot[b-6qvl1dkfdw] {
+    display: flex;
+    flex-direction: column;
 }
 
 .film-genre[b-6qvl1dkfdw] {
     display: flex;
     flex-direction: row;
 }
+
 /* _content/kinoUI/Pages/MainPage.razor.rz.scp.css */
 .main-page[b-zt4f6o4lhi] {
 }

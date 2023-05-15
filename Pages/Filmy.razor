@@ -13,7 +13,8 @@
             @foreach (var film in filmy)
             {
                 <div class="film-box">
-                    <div class="film-img">
+                    <div class="film-img" @onclick=@(() =>NavigationManager.NavigateTo("/" + @film.ImageUrl.Substring(0,
+                @film.ImageUrl.Length - 4)))>
                         <img src="@film.ImageUrl">
                     </div>
                     <div class="film-info">
@@ -26,19 +27,22 @@
                                 </div>
                             }
                         </div>
-                        <div class="film-release-date">
-                            @film.ReleaseYear
-                        </div>
-                        <div class="film-genre">
-                            gatunek&nbsp
-                            <div class="film-genre-display">
-                                @film.FilmGenre
+                        <div class="film-info-bot">
+                            <div class="film-genre">
+                                <div class="film-genre-display">
+                                    @film.FilmGenre
+                                </div>
                             </div>
+                            <div class="film-release-date">
+                                @film.ReleaseYear
+                            </div>
+                            
                         </div>
+
                     </div>
                     <div class="film-rating">
                         <div class="film-rate">
-
+                            <img src="/img/star.png" width="50rem"/>
                         </div>
                     </div>
                 </div>
