@@ -1,20 +1,32 @@
 .filmy-page {
     display: flex;
     flex-direction: row;
-    margin-left: 20vw;
+    justify-content: center;
 }
 
 .film-box {
     display: flex;
     flex-direction: row;
-    background-color: grey;
-    margin: 10px;
-    width: 50vw;
+    background-color: rgb(90, 90, 90);
+    border-radius: 1rem;    
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 40vw;
+}
+
+.film-img {
+    margin: 1rem;
+}
+
+.film-img > img {
+    width: 10vw;
+    border-radius: 1rem;
 }
 
 .film-info {
     display: flex;
     flex-flow: row wrap;
+    margin: 2rem;
 }
 
 .film-genre {
