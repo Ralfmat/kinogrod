@@ -16,16 +16,14 @@
 
 .film-img[b-6qvl1dkfdw] {
     margin: 1rem;
+    z-index: 1;
 }
 
 .film-img:hover[b-6qvl1dkfdw] {
     -webkit-filter: brightness(60%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
     transition: all 1s ease;
     cursor: pointer;
+    z-index: 1;
 }
 
 .film-img > img[b-6qvl1dkfdw] {
