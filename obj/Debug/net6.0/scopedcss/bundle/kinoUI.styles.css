@@ -111,7 +111,7 @@ h1[b-zt4f6o4lhi] {
     text-decoration: none;
 }
 .logo_text:hover[b-st4fj1d944] {
-    -webkit-filter: brightness(90%);
+    -webkit-filter: brightness(80%);
 }
 .logo > a > img[b-st4fj1d944] {
     width: 4rem;
@@ -126,7 +126,7 @@ h1[b-zt4f6o4lhi] {
 }
 .nav-tab[b-st4fj1d944] {
     font-size: 1.4rem;
-    margin-right: 5vw;
+    margin-left: 5vw;
     padding: 10px 20px 10px 20px;
     background-color: rgb(63, 63, 63);
     border-radius: 10rem;
@@ -149,22 +149,42 @@ h1[b-zt4f6o4lhi] {
 }
 .searchField > form > input:focus[b-st4fj1d944] {
     outline: 2px solid rgb(110, 109, 108); 
+    -webkit-filter: brightness(80%);
+    transition: all 0.5s ease;
 }
 .searchField > form > button[b-st4fj1d944] {
     border: none;
     border-radius: 10rem;
     font-size: 1rem;
     font-weight:600;
-    margin-left: 1vw;
+    margin-left: 0.5vw;
+    padding: 10px 15px 8px 15px;
+    background-color: rgb(63, 63, 63);
+    color: rgb(230, 223, 218);
+}
+.searchField > form > button:hover[b-st4fj1d944] {
+    -webkit-filter: brightness(70%);
+    transition: all 0.5s ease;
+}
+
+.accountButtons[b-st4fj1d944] {
+    margin-right: 2vw;;
+}
+.accountButtons > button[b-st4fj1d944] {
+    border: none;
+    border-radius: 10rem;
+    font-size: 1rem;
+    font-weight:600;
+    margin-left: 0.5vw;
     padding: 10px 15px 8px 15px;
     background-color: rgb(63, 63, 63);
     color: orange
 }
 
-.accoundButtons[b-st4fj1d944] {
-
+.accountButtons > button:hover[b-st4fj1d944] {
+    -webkit-filter: brightness(70%);
+    transition: all 0.5s ease;
 }
-
 .content[b-st4fj1d944] {
     padding-top: 12vh;
     background-color: #383836;

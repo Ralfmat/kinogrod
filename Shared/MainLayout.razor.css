@@ -20,7 +20,7 @@
     text-decoration: none;
 }
 .logo_text:hover {
-    -webkit-filter: brightness(90%);
+    -webkit-filter: brightness(80%);
 }
 .logo > a > img {
     width: 4rem;
@@ -35,7 +35,7 @@
 }
 .nav-tab {
     font-size: 1.4rem;
-    margin-right: 5vw;
+    margin-left: 5vw;
     padding: 10px 20px 10px 20px;
     background-color: rgb(63, 63, 63);
     border-radius: 10rem;
@@ -58,22 +58,42 @@
 }
 .searchField > form > input:focus {
     outline: 2px solid rgb(110, 109, 108); 
+    -webkit-filter: brightness(80%);
+    transition: all 0.5s ease;
 }
 .searchField > form > button {
     border: none;
     border-radius: 10rem;
     font-size: 1rem;
     font-weight:600;
-    margin-left: 1vw;
+    margin-left: 0.5vw;
+    padding: 10px 15px 8px 15px;
+    background-color: rgb(63, 63, 63);
+    color: rgb(230, 223, 218);
+}
+.searchField > form > button:hover {
+    -webkit-filter: brightness(70%);
+    transition: all 0.5s ease;
+}
+
+.accountButtons {
+    margin-right: 2vw;;
+}
+.accountButtons > button {
+    border: none;
+    border-radius: 10rem;
+    font-size: 1rem;
+    font-weight:600;
+    margin-left: 0.5vw;
     padding: 10px 15px 8px 15px;
     background-color: rgb(63, 63, 63);
     color: orange
 }
 
-.accoundButtons {
-
+.accountButtons > button:hover {
+    -webkit-filter: brightness(70%);
+    transition: all 0.5s ease;
 }
-
 .content {
     padding-top: 12vh;
     background-color: #383836;
