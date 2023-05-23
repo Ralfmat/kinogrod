@@ -129,6 +129,10 @@
       "PackagePath": "staticwebassets\\img\\filmy\\zielona_mila.jpg"
     },
     {
+      "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\search.png",
+      "PackagePath": "staticwebassets\\img\\search.png"
+    },
+    {
       "Id": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\star.png",
       "PackagePath": "staticwebassets\\img\\star.png"
     },

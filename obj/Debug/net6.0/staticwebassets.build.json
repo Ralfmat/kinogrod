@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MWq5pccatqxRAN9JqieM6WQF0CvzdYNdN3Wxwra9Im4=",
+  "Hash": "93c43K5M39PoE1B6J2Bsmbr0Hc0WcWC0GlemKe13O0M=",
   "Source": "kinoUI",
   "BasePath": "_content/kinoUI",
   "Mode": "Default",
@@ -576,6 +576,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\filmy\\zielona_mila.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\search.png",
+      "SourceId": "kinoUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\",
+      "BasePath": "_content/kinoUI",
+      "RelativePath": "img/search.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\search.png"
     },
     {
       "Identity": "C:\\Users\\Mateusz\\Desktop\\.Net\\kinogrod\\wwwroot\\img\\star.png",
