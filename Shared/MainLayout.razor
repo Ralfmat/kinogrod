@@ -44,14 +44,66 @@
                 </form>
             </div>
             <div class="accountButtons">
-                <button>
+                <button @onclick="userInterface.show_login_window">
                     Zaloguj się
                 </button>
-                <button>
+                <button @onclick="userInterface.show_register_window">
                     Zarejestruj się
                 </button>
             </div>
 
+
+            @if (userInterface.check_visibility("register"))
+            {
+                <div class="loginWindowContainer">
+                    <div class="loginBorder">
+                        <div class="loginContent">
+                            <h3 class="loginTitle">Rejestracja</h3>
+                            <div class="loginInputs">
+                                <input placeholder="E-mail" />
+                            </div>
+                            <div class="loginInputs">
+                                <input placeholder="Nazwa Użytkownika" />
+                            </div>
+                            <div class="loginInputs">
+                                <input placeholder="Hasło" />
+                            </div>
+                            <div class="loginInputs">
+                                <input placeholder="Powtórz hasło" />
+                            </div>
+                            <div class="loginButtons">
+                                <button @onclick="userInterface.close_register_window">Zarejestruj</button>
+                            </div>
+                            <div class="loginButtons">
+                                <button @onclick="userInterface.close_register_window">Zaloguj</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            @if (userInterface.check_visibility("login"))
+            {
+            <div class="loginWindowContainer">
+                <div class="loginBorder">
+                    <div class="loginContent">
+                        <h3 class="loginTitle">Logowanie</h3>
+                        <div class="loginInputs">
+                            <input type="text" placeholder="Nazwa Użytkownika" />
+                        </div>
+                        <div class="loginInputs">
+                                <input type="password" placeholder="Hasło" />
+                            </div>                     
+                        <div class="loginButtons">
+                            <button @onclick="userInterface.close_login_window">Zaloguj</button>
+                        </div>
+                        <div class="loginButtons">
+                                <button @onclick="userInterface.close_login_window">Zarejestruj</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
 
             <!-- Tu będzie EditForm do szukania filmów!-->
         </div>
@@ -70,7 +122,70 @@
 @code {
     private string? SearchString;
 
+    public class UserInterface
+    {
+        bool login_window_visible;
+        bool register_window_visible;
+
+        public UserInterface()
+        {
+            login_window_visible = false;
+            register_window_visible = false;
+        }
+
+        public void show_register_window()
+        {
+            register_window_visible = true;
+        }
+
+        public void show_login_window()
+        {
+            login_window_visible = true;
+        }
+
+        public void close_register_window()
+        {
+            register_window_visible = false;
+        }
+
+        public void close_login_window()
+        {
+            login_window_visible = false;
+        }
+
+        public bool check_visibility(string selected_window)
+        {
+            switch(selected_window)
+            {
+                case "register":
+                    return register_window_visible;
+
+                case "login":
+                    return login_window_visible;
+
+                default:
+                    throw new ArgumentException("Invalid type.");
+            }       
+        }
+    }
+
+    public class UserMenager
+    {
+        public void register() //uploading users data to database
+        {
+
+        }
+
+        public void login() //checking if users credentials are in database
+        {
+            
+        }
+    }
+
+
     private void Search()
     {
     }
+
+    UserInterface userInterface = new UserInterface();
 }
