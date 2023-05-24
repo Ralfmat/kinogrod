@@ -1,5 +1,13 @@
 ﻿@using Microsoft.AspNetCore.Components.Web
 @inherits LayoutComponentBase
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager
+@using Microsoft.AspNetCore.Mvc
+@using Microsoft.AspNetCore.Mvc.RazorPages
+@using kinoUI.Models
+@using kinoUI.Data
+@using kinoUI.Controllers
+@inject UserController UserController
 
 <div id="app">
     <FixedElement Selector=".top-bar">
@@ -59,24 +67,26 @@
                     <div class="loginBorder">
                         <div class="loginContent">
                             <h3 class="loginTitle">Rejestracja</h3>
-                            <div class="loginInputs">
-                                <input placeholder="E-mail" />
-                            </div>
-                            <div class="loginInputs">
-                                <input placeholder="Nazwa Użytkownika" />
-                            </div>
-                            <div class="loginInputs">
-                                <input placeholder="Hasło" />
-                            </div>
-                            <div class="loginInputs">
-                                <input placeholder="Powtórz hasło" />
-                            </div>
-                            <div class="loginButtons">
-                                <button @onclick="userInterface.close_register_window">Zarejestruj</button>
-                            </div>
-                            <div class="loginButtons">
-                                <button @onclick="userInterface.close_register_window">Zaloguj</button>
-                            </div>
+                            <form>
+                                <div class="loginInputs">
+                                    <input placeholder="E-mail" id="register_email"/>
+                                </div>
+                                <div class="loginInputs">
+                                    <input placeholder="Nazwa Użytkownika" id="register_login" />
+                                </div>
+                                <div class="loginInputs">
+                                    <input placeholder="Hasło" id="register_password" />
+                                </div>
+                                <div class="loginInputs">
+                                    <input placeholder="Powtórz hasło" id="register_password2" />
+                                </div>
+                                <div class="loginButtons">
+                                    <button @onclick="AddUser">Zarejestruj</button>
+                                </div>
+                                <div class="loginButtons">
+                                    <button @onclick="userInterface.close_register_window">Zaloguj</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -146,6 +156,7 @@
         public void close_register_window()
         {
             register_window_visible = false;
+            userMenager.register();
         }
 
         public void close_login_window()
@@ -178,14 +189,30 @@
 
         public void login() //checking if users credentials are in database
         {
-            
+
         }
     }
 
 
     private void Search()
     {
+        
     }
 
     UserInterface userInterface = new UserInterface();
+    static UserMenager userMenager = new UserMenager();   
+
+    // Dlaczego to nie dziala????
+
+    private async Task AddUser()
+    {
+        User newUser = new User
+            {
+                UserName = "test",
+                Email = "test",
+                Password = "test"
+            };
+
+        await UserController.AddUserAsync(newUser);
+    }
 }

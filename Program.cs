@@ -1,4 +1,5 @@
 using kinoUI.Data;
+using kinoUI.Controllers;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
@@ -13,6 +14,7 @@ builder.Services.AddServerSideBlazor();
 
 builder.Services.AddHttpClient();
 builder.Services.AddSqlite<DatabaseContext>("Data Source=film.db");
+builder.Services.AddScoped<UserController>();
 
 var app = builder.Build();
 
