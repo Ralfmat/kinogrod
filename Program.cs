@@ -15,6 +15,7 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddHttpClient();
 builder.Services.AddSqlite<DatabaseContext>("Data Source=film.db");
 builder.Services.AddScoped<UserController>();
+builder.Services.AddScoped<FilmRatingController>();
 
 var app = builder.Build();
 

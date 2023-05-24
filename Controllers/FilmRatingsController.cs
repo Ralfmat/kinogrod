@@ -5,21 +5,21 @@ using kinoUI.Models;
 
 namespace kinoUI.Controllers;
 
-[Route("filmy")]
+[Route("filmyRating")]
 [ApiController]
-public class FilmController : Controller
+public class FilmRatingController : Controller
 {
     private readonly DatabaseContext _db;
     
-    public FilmController(DatabaseContext db)
+    public FilmRatingController(DatabaseContext db)
     {
         _db = db;
     } 
 
     [HttpGet]
-    public async Task<ActionResult<List<Film>>> GetFilm()
+    public async Task<ActionResult<List<FilmRating>>> GetFilm()
     {
-        return (await _db.Films.ToListAsync());
+        return (await _db.FilmRatings.ToListAsync());
     }
 
 }

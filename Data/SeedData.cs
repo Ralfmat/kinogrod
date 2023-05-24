@@ -52,8 +52,51 @@ public static class SeedData
             }
 
         };
-        
+        var users = new User[]
+        {
+            new User()
+            {
+                Id = 1,
+                Email = "test",
+                UserName = "test",
+                Password = "test"
+            }
+        };
+        var filmRatings = new FilmRating[]
+        {
+            new FilmRating()
+            {
+                Id = 1,
+                Rate = 5,
+                FilmId = 1,
+                UserId = 1
+            },
+            new FilmRating()
+            {
+                Id = 2,
+                Rate = 4,
+                FilmId = 1,
+                UserId = 1
+            },
+            new FilmRating()
+            {
+                Id = 3,
+                Rate = 2,
+                FilmId = 1,
+                UserId = 1
+            },
+            new FilmRating()
+            {
+                Id = 4,
+                Rate = 3,
+                FilmId = 1,
+                UserId = 1
+            }
+        };
+
         db.Films.AddRange(filmy);
+        db.FilmRatings.AddRange(filmRatings);
+        db.Users.AddRange(users);
         db.SaveChanges();
     }
 }

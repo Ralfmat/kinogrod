@@ -5,7 +5,7 @@ using kinoUI.Models;
 
 namespace kinoUI.Controllers;
 
-[Route("userData")]
+[Route("user")]
 [ApiController]
 
 public class UserController : Controller

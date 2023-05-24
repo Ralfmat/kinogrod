@@ -10,5 +10,5 @@ public class Film
     public string? FilmGenre { get; set; }
     public string? Description { get; set; }
     public int? LengthInMinutes { get; set; }
-    public ICollection<FilmRating> FilmRatings { get; set; }
+    public List<FilmRating> FilmRatings { get; set; }
 }

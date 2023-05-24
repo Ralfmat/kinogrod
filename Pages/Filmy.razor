@@ -41,8 +41,29 @@
 
                     </div>
                     <div class="film-rating">
-                        <div class="film-rate">
+                        <div class="film-rate-img">
                             <img src="/img/star.png" width="50rem"/>
+                        </div>
+                        <div class="filmy-rate">
+                            @if(filmyRating != null)
+                            {
+                                rate = 0;
+                                int i = 0;
+                                @foreach (FilmRating rating in filmyRating)
+                                {
+                                    @if(rating.FilmId == film.Id)
+                                    {
+                                        rate += Convert.ToDouble(rating.Rate);
+                                        i++;
+                                    }
+                                }
+                                @if (i > 0)
+                                {
+                                    
+                                rate = rate / Convert.ToDouble(i);
+                                }
+                            }
+                            @rate
                         </div>
                     </div>
                 </div>
@@ -52,9 +73,13 @@
 </div>
 
 @code {
+    double rate = 0;
+
+    List<FilmRating> filmyRating = new();
     List<Film> filmy = new();
     protected override async Task OnInitializedAsync()
     {
-        filmy = await HttpClient.GetFromJsonAsync<List<Film>>(NavigationManager.BaseUri + "filmyData");
+        filmy = await HttpClient.GetFromJsonAsync<List<Film>>(NavigationManager.BaseUri + "filmy");
+        filmyRating = await HttpClient.GetFromJsonAsync<List<FilmRating>>(NavigationManager.BaseUri + "filmyRating");
     }
 }

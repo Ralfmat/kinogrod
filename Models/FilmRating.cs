@@ -7,7 +7,7 @@ public class FilmRating
     public int Id { get; set; }
 
     [Range(0, 5, ErrorMessage = "Ocena filmu musi być w przedziale od 0 do 5!")]
-    public int? Rate { get; set; }
+    public int Rate { get; set; }
     public string? Comment { get; set; }
     public int FilmId { get; set; }
     public Film Film { get; set; }

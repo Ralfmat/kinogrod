@@ -29,6 +29,6 @@
         List<Film> filmy = new();
         protected override async Task OnInitializedAsync()
         {
-            filmy = await HttpClient.GetFromJsonAsync<List<Film>>(NavigationManager.BaseUri + "filmyData");
+            filmy = await HttpClient.GetFromJsonAsync<List<Film>>(NavigationManager.BaseUri + "filmy");
         }
 }
