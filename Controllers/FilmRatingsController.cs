@@ -17,9 +17,23 @@ public class FilmRatingController : Controller
     } 
 
     [HttpGet]
-    public async Task<ActionResult<List<FilmRating>>> GetFilm()
+    public async Task<ActionResult<List<FilmRating>>> GetFilmRating()
     {
         return (await _db.FilmRatings.ToListAsync());
     }
+
+    [HttpGet("{FilmId}")]
+    public async Task<ActionResult<List<FilmRating>>> GetFilmRating(int FilmId)
+    {
+        var filmRating = await _db.FilmRatings.Where(fr => fr.FilmId == FilmId).ToListAsync();
+
+        if (filmRating != null)
+        {
+            return Ok(filmRating);
+        }
+
+        return NotFound();
+    }
+
 
 }

@@ -19,7 +19,26 @@ public class FilmController : Controller
     [HttpGet]
     public async Task<ActionResult<List<Film>>> GetFilm()
     {
-        return (await _db.Films.ToListAsync());
-    }
+        var filmy = await _db.Films.ToListAsync();
 
+        if (filmy != null) 
+        {
+            return Ok(filmy);
+        }
+
+        return NotFound();
+    }
+    
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Film>> GetFilm(int Id)
+    {
+        var film = await _db.Films.FindAsync(Id);
+
+        if (film != null)
+        {
+            return Ok(film);
+        }
+
+        return NotFound();
+    }
 }

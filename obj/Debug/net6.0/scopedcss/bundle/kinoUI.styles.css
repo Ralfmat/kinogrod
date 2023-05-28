@@ -57,6 +57,20 @@
     flex-direction: row;
 }
 
+.film-rating[b-6qvl1dkfdw] {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.film-rate-img[b-6qvl1dkfdw] {
+    margin-right: 1vw;
+}
+
+.filmy-rate[b-6qvl1dkfdw] {
+    font-size: 2rem;
+}
 /* _content/kinoUI/Pages/MainPage.razor.rz.scp.css */
 .main-page[b-zt4f6o4lhi] {
 }
@@ -266,4 +280,9 @@ footer[b-st4fj1d944] {
 
 .loginInputs input:not(:last-child)[b-st4fj1d944] {
     margin-bottom: 10px;
+}
+
+
+.content[b-st4fj1d944] {
+    min-height: 97.5vh;
 }

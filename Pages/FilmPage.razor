@@ -1,0 +1,80 @@
+@page "/filmy/{Id:int}"
+@using kinoUI.Models;
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager
+
+<h1>Film Id: @Id</h1>
+<h2>Film Title: @film.Title</h2>
+
+<div class="film-info">
+    <div class="film-box">
+        <img src="@film.ImageUrl" width="100px"/>
+        <div class="film-info">
+            <div class="film-title">
+                @film.Title
+                @if (film.OriginalTitle != film.Title)
+                {
+                    <div class="film-og-title">
+                        @film.OriginalTitle
+                    </div>
+                }
+            </div>
+            <div class="film-info-bot">
+                <div class="film-genre">
+                    <div class="film-genre-display">
+                        @film.FilmGenre
+                    </div>
+                </div>
+                <div class="film-release-date">
+                    @film.ReleaseYear
+                </div>
+            </div>
+        </div>
+                    <!-- <div class="film-rating">
+                        <div class="film-rate-img">
+                            <img src="/img/star.png" width="50rem"/>
+                        </div>
+                        <div class="filmy-rate">
+                            @if(filmyRating != null)
+                            {
+                                rate = 0;
+                                int i = 0;
+                                @foreach (FilmRating rating in filmyRating)
+                                {
+                                    @if(rating.FilmId == film.Id)
+                                    {
+                                        rate += Convert.ToDouble(rating.Rate);
+                                        i++;
+                                    }
+                                }
+                                @if (i > 0)
+                                {
+                                    
+                                rate = rate / Convert.ToDouble(i);
+                                }
+                            }
+                            @rate
+                        </div>
+                    </div> -->
+    </div>
+</div>
+<div class="film-comments">
+    @foreach (var rating in filmRating)
+    {
+        @rating.Rate;
+    }
+</div>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    Film film = new();
+    List<FilmRating> filmRating = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        film = await HttpClient.GetFromJsonAsync<Film>(NavigationManager.BaseUri + $"filmy/{Id}");
+        filmRating = await HttpClient.GetFromJsonAsync<List<FilmRating>>(NavigationManager.BaseUri + $"filmyRating/{Id}");
+    }
+}

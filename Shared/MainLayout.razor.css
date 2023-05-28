@@ -176,3 +176,8 @@ footer {
 .loginInputs input:not(:last-child) {
     margin-bottom: 10px;
 }
+
+
+.content {
+    min-height: 97.5vh;
+}

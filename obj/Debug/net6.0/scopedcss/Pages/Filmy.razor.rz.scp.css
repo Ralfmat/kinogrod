@@ -56,3 +56,17 @@
     flex-direction: row;
 }
 
+.film-rating[b-6qvl1dkfdw] {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.film-rate-img[b-6qvl1dkfdw] {
+    margin-right: 1vw;
+}
+
+.filmy-rate[b-6qvl1dkfdw] {
+    font-size: 2rem;
+}

@@ -56,3 +56,17 @@
     flex-direction: row;
 }
 
+.film-rating {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.film-rate-img {
+    margin-right: 1vw;
+}
+
+.filmy-rate {
+    font-size: 2rem;
+}

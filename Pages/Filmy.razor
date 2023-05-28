@@ -13,8 +13,7 @@
             @foreach (var film in filmy)
             {
                 <div class="film-box">
-                    <div class="film-img" @onclick=@(() =>NavigationManager.NavigateTo("/" + @film.ImageUrl.Substring(0,
-                @film.ImageUrl.Length - 4)))>
+                    <div class="film-img" @onclick=@(() =>NavigationManager.NavigateTo("filmy/" + @film.Id))>
                         <img src="@film.ImageUrl">
                     </div>
                     <div class="film-info">

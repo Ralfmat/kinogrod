@@ -176,3 +176,8 @@ footer[b-st4fj1d944] {
 .loginInputs input:not(:last-child)[b-st4fj1d944] {
     margin-bottom: 10px;
 }
+
+
+.content[b-st4fj1d944] {
+    min-height: 97.5vh;
+}
