@@ -3,43 +3,20 @@
 @inject HttpClient HttpClient
 @inject NavigationManager NavigationManager
 
-<h1>Film Id: @Id</h1>
-<h2>Film Title: @film.Title</h2>
+<div class="film-page">
 
-<div class="film-info">
-    <div class="film-box">
-        <img src="@film.ImageUrl" width="100px"/>
-        <div class="film-info">
+    <div class="film-page-info">
+        <div class="top-info">
             <div class="film-title">
-                @film.Title
-                @if (film.OriginalTitle != film.Title)
-                {
-                    <div class="film-og-title">
-                        @film.OriginalTitle
-                    </div>
-                }
+                    @film.Title
             </div>
-            <div class="film-info-bot">
-                <div class="film-genre">
-                    <div class="film-genre-display">
-                        @film.FilmGenre
-                    </div>
-                </div>
-                <div class="film-release-date">
-                    @film.ReleaseYear
-                </div>
-            </div>
-        </div>
-                    <!-- <div class="film-rating">
-                        <div class="film-rate-img">
-                            <img src="/img/star.png" width="50rem"/>
-                        </div>
-                        <div class="filmy-rate">
-                            @if(filmyRating != null)
+            <div class="film-page-rate">
+                <img src="/img/star.png" width="50rem"/>
+                @if(filmRating != null)
                             {
                                 rate = 0;
                                 int i = 0;
-                                @foreach (FilmRating rating in filmyRating)
+                                @foreach (FilmRating rating in filmRating)
                                 {
                                     @if(rating.FilmId == film.Id)
                                     {
@@ -53,22 +30,64 @@
                                 rate = rate / Convert.ToDouble(i);
                                 }
                             }
-                            @rate
-                        </div>
-                    </div> -->
+                            @rate / 5
+            </div>
+        </div>
+        <div class="center-info">
+            <img src="@film.ImageUrl">
+            <div class="description-info">
+                <div class="description">
+                    @film.Description
+                </div>
+                <div class="details">
+                    <div class="d1">
+                        <div class="og-title">oryginalny tytuł </div>
+                        <div class="genre">gatunek </div>
+                        <div class="year">premiera </div>
+                        <div class="length">długość </div>
+                    </div>
+                    <div class="d2">
+                        <div class="og-title">@film.OriginalTitle</div>
+                        <div class="genre">@film.FilmGenre</div>
+                        <div class="year">@film.ReleaseYear</div>
+                        <div class="length">@film.LengthInMinutes min.</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
     </div>
-</div>
-<div class="film-comments">
-    @foreach (var rating in filmRating)
-    {
-        @rating.Rate;
-    }
+
+    <div class="add-comment">
+    </div>
+    
+    <div class="film-comments">
+            @foreach (var rating in filmRating)
+            {
+                <div class="film-comment">
+                    <div class="comment-box">
+                        <div class="user-avatar">
+                            User Id: @rating.UserId
+                        </div>
+                        <div class="rate-box">
+                                <img src="/img/star.png" width="20rem"/>
+                                <div class="rate">
+                                    @rating.Rate / 5
+                                </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        @rating.Comment
+                    </div>
+                </div>
+            }
+    </div> 
 </div>
 
 @code {
     [Parameter]
     public int Id { get; set; }
-
+    double rate = 0;
     Film film = new();
     List<FilmRating> filmRating = new();
 

@@ -11,7 +11,7 @@
     border-radius: 1rem;    
     margin-top: 1rem;
     margin-bottom: 2rem;
-    width: 40vw;
+    width: 44vw;
 }
 
 .film-img[b-6qvl1dkfdw] {
@@ -36,12 +36,18 @@
     flex-flow: column wrap;
     justify-content: space-between;
     margin: 2rem;
+    width: 16vw;
 }
 
 .film-title[b-6qvl1dkfdw] {
     font-size: 2rem;
 }
-
+.film-title:hover[b-6qvl1dkfdw] {
+    -webkit-filter: brightness(60%);
+    transition: all 1s ease;
+    cursor: pointer;
+    z-index: 1;
+}
 .film-og-title[b-6qvl1dkfdw] {
     font-size: 1.3rem;
 }

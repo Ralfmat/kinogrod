@@ -314,3 +314,4 @@ C:\Users\Mateusz\Desktop\.Net\kinogrod\obj\Debug\net6.0\refint\kinoUI.dll
 C:\Users\Mateusz\Desktop\.Net\kinogrod\obj\Debug\net6.0\kinoUI.pdb
 C:\Users\Mateusz\Desktop\.Net\kinogrod\obj\Debug\net6.0\kinoUI.genruntimeconfig.cache
 C:\Users\Mateusz\Desktop\.Net\kinogrod\obj\Debug\net6.0\ref\kinoUI.dll
+C:\Users\Mateusz\Desktop\.Net\kinogrod\obj\Debug\net6.0\scopedcss\Pages\FilmPage.razor.rz.scp.css

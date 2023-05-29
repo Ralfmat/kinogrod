@@ -17,7 +17,7 @@
                         <img src="@film.ImageUrl">
                     </div>
                     <div class="film-info">
-                        <div class="film-title">
+                        <div class="film-title" @onclick=@(() =>NavigationManager.NavigateTo("filmy/" + @film.Id))>
                             @film.Title
                             @if (film.OriginalTitle != film.Title)
                             {
@@ -62,7 +62,7 @@
                                 rate = rate / Convert.ToDouble(i);
                                 }
                             }
-                            @rate
+                            @rate / 5
                         </div>
                     </div>
                 </div>
