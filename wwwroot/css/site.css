@@ -6,21 +6,22 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #747474;
+    background: rgb(63, 63, 63);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(63, 63, 63);
+    background: #747474;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #1d1d1b;
+    background: #949494;
 }
 
 html,
 body {
     font-family: 'Segoe UI','Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
 }
 
 h1:focus {

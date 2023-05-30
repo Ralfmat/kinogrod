@@ -1,7 +1,10 @@
 @page "/filmy/{Id:int}"
-@using kinoUI.Models;
+@using kinoUI.Models
+@using kinoUI.Data
+@using kinoUI.Controllers
 @inject HttpClient HttpClient
 @inject NavigationManager NavigationManager
+@inject FilmRatingController FilmRatingController
 
 <div class="film-page">
 
@@ -30,7 +33,7 @@
                                 rate = rate / Convert.ToDouble(i);
                                 }
                             }
-                            @rate / 5
+                            @Math.Round(Convert.ToDouble(@rate), 2) / 5
             </div>
         </div>
         <div class="center-info">
@@ -59,27 +62,72 @@
     </div>
 
     <div class="add-comment">
+        <div class="add-comment-box">
+            
+            <div class="new-comment">
+                <textarea rows="5" cols="200" maxlength="400" @bind="newComment" placeholder="Dodaj komentarz..."></textarea>
+            </div>
+            <div class="rate-box">
+                    <form class="rating" >
+                                    <label>
+                                        <input type="radio" name="stars" value="1" Checked="newRate" @onchange="OnSelect"/>
+                                        <span class="icon">★</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="stars" value="2"  Checked="newRate" @onchange="OnSelect"/>
+                                        <span class="icon">★</span>
+                                        <span class="icon">★</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="stars" value="3"  Checked="newRate" @onchange="OnSelect"/>
+                                        <span class="icon">★</span>
+                                        <span class="icon">★</span>
+                                        <span class="icon">★</span>   
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="stars" value="4"  Checked="newRate" @onchange="OnSelect"/>
+                                        <span class="icon">★</span>
+                                        <span class="icon">★</span>
+                                        <span class="icon">★</span>
+                                        <span class="icon">★</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="stars" value="5"  Checked="newRate" @onchange="OnSelect"/>
+                                        <span class="icon">★</span>
+                                        <span class="icon">★</span>
+                                        <span class="icon">★</span>
+                                        <span class="icon">★</span>
+                                        <span class="icon">★</span>
+                                    </label>
+                    </form>
+            </div>
+        </div>
+        <button  @onclick="CommentSubmit">Dodaj komentarz</button>
     </div>
     
     <div class="film-comments">
             @foreach (var rating in filmRating)
             {
-                <div class="film-comment">
-                    <div class="comment-box">
-                        <div class="user-avatar">
-                            User Id: @rating.UserId
+                @if(rating.Comment != "")
+                {
+                    <div class="film-comment">
+                        <div class="comment-box">
+                            <div class="user-avatar">
+                                User Id: @rating.UserId
+                            </div>
+                            <div class="rate-box">
+                                    <img src="/img/star.png" width="20rem"/>
+                                    <div class="rate">
+                                        @rating.Rate / 5
+                                    </div>
+                            </div>
                         </div>
-                        <div class="rate-box">
-                                <img src="/img/star.png" width="20rem"/>
-                                <div class="rate">
-                                    @rating.Rate / 5
-                                </div>
+                        <div class="comment">
+                            @rating.Comment
                         </div>
                     </div>
-                    <div class="comment">
-                        @rating.Comment
-                    </div>
-                </div>
+                }
+                
             }
     </div> 
 </div>
@@ -87,13 +135,41 @@
 @code {
     [Parameter]
     public int Id { get; set; }
+
     double rate = 0;
+
     Film film = new();
     List<FilmRating> filmRating = new();
+
+    string newComment = "";
+    string newRate = "5";
+    bool isChcked = false;
 
     protected override async Task OnInitializedAsync()
     {
         film = await HttpClient.GetFromJsonAsync<Film>(NavigationManager.BaseUri + $"filmy/{Id}");
         filmRating = await HttpClient.GetFromJsonAsync<List<FilmRating>>(NavigationManager.BaseUri + $"filmyRating/{Id}");
     }
+
+    public void OnSelect(Microsoft.AspNetCore.Components.ChangeEventArgs args) => newRate = (string)args.Value;
+    
+    public async Task CommentSubmit()
+    {
+        if(newRate != "")
+        {
+            FilmRating filmRating = new FilmRating
+            {
+                Rate = int.Parse(newRate),
+                Comment = newComment,
+                FilmId = Id,
+                UserId = 1
+            };
+
+            await FilmRatingController.AddFilmRatingAsync(filmRating);
+            newRate = "5";
+            newComment = "";
+        }
+        
+    }
+
 }

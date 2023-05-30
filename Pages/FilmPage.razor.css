@@ -95,3 +95,119 @@
 .rate-box > img {
     margin-right: 0.5rem;
 }
+
+.add-comment {
+    background-color: rgb(39, 39, 39);
+    width: 60vw;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.add-comment-box {
+    background-color: rgb(63, 63, 63);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.new-comment {
+    margin: 0.4rem;
+    width: 70%;
+}
+.new-comment > textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    background-color: rgb(39, 39, 39);
+    color: rgb(230, 223, 218);
+    resize: none;
+    border: none;
+}
+
+
+
+button {
+    align-self: flex-end;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 10rem;
+    font-size: 1rem;
+    font-weight:600;
+    padding: 10px 15px 8px 15px;
+    background-color: rgb(63, 63, 63);
+    color: rgb(230, 223, 218);
+}
+
+button:hover {
+    -webkit-filter: brightness(90%);
+    transition: all 0.5s ease;
+}
+
+.rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 50px;
+  }
+  
+  .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .rating label:last-child {
+    position: static;
+  }
+  
+  .rating label:nth-child(1) {
+    z-index: 5;
+  }
+  
+  .rating label:nth-child(2) {
+    z-index: 4;
+  }
+  
+  .rating label:nth-child(3) {
+    z-index: 3;
+  }
+  
+  .rating label:nth-child(4) {
+    z-index: 2;
+  }
+  
+  .rating label:nth-child(5) {
+    z-index: 1;
+  }
+  
+  .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .rating label .icon {
+    float: left;
+    color: transparent;
+  }
+  
+  .rating label:last-child .icon {
+    color: #000;
+  }
+  
+  .rating:not(:hover) label input:checked ~ .icon,
+  .rating:hover label:hover input ~ .icon {
+    color: rgb(224, 224, 0);
+  }
+  
+  .rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+  }  

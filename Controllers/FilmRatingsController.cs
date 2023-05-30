@@ -34,4 +34,11 @@ public class FilmRatingController : Controller
 
         return NotFound();
     }
+
+    [HttpPost]
+    public async Task AddFilmRatingAsync(FilmRating filmRating)
+    {
+        _db.FilmRatings.Add(filmRating);
+        await _db.SaveChangesAsync();
+    }
 }
