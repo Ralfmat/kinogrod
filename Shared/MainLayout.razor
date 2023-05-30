@@ -52,16 +52,16 @@
                 </form>
             </div>
             <div class="accountButtons">
-                <button @onclick="userInterface.show_login_window">
+                <button @onclick="show_login_window">
                     Zaloguj się
                 </button>
-                <button @onclick="userInterface.show_register_window">
+                <button @onclick="show_register_window">
                     Zarejestruj się
                 </button>
             </div>
 
 
-            @if (userInterface.check_visibility("register"))
+            @if (check_visibility("register"))
             {
                 <div class="loginWindowContainer">
                     <div class="loginBorder">
@@ -69,30 +69,36 @@
                             <h3 class="loginTitle">Rejestracja</h3>
                             <form>
                                 <div class="loginInputs">
-                                    <input placeholder="E-mail" id="register_email"/>
+                                    <input placeholder="E-mail" id="register_email" @bind="email_input" />
                                 </div>
                                 <div class="loginInputs">
-                                    <input placeholder="Nazwa Użytkownika" id="register_login" />
+                                    <input placeholder="Nazwa Użytkownika" id="register_login" @bind="login_input" />
                                 </div>
                                 <div class="loginInputs">
-                                    <input placeholder="Hasło" id="register_password" />
+                                    <input placeholder="Hasło" type="password" id="register_password" @bind="pasword_input" />
                                 </div>
                                 <div class="loginInputs">
-                                    <input placeholder="Powtórz hasło" id="register_password2" />
+                                    <input placeholder="Powtórz hasło" type="password" id="register_password2" @bind="pasword_input2" />
                                 </div>
                                 <div class="loginButtons">
-                                    <button @onclick="AddUser">Zarejestruj</button>
+                                    <button @onclick="() => close_register_window(true)">Zarejestruj</button>
                                 </div>
                                 <div class="loginButtons">
-                                    <button @onclick="userInterface.close_register_window">Zaloguj</button>
+                                    <button @onclick="() => close_register_window(false)">Cofnij</button>
                                 </div>
+                                @if (register_error)
+                                {
+                                    <div class="loginButtons">
+                                        <button @onclick="() => close_register_window(false)">Cofnij</button>
+                                    </div>
+                                }
                             </form>
                         </div>
                     </div>
                 </div>
             }
 
-            @if (userInterface.check_visibility("login"))
+            @if (check_visibility("login"))
             {
             <div class="loginWindowContainer">
                 <div class="loginBorder">
@@ -105,10 +111,10 @@
                                 <input type="password" placeholder="Hasło" />
                             </div>                     
                         <div class="loginButtons">
-                            <button @onclick="userInterface.close_login_window">Zaloguj</button>
+                            <button @onclick="close_login_window">Zaloguj</button>
                         </div>
                         <div class="loginButtons">
-                                <button @onclick="userInterface.close_login_window">Zarejestruj</button>
+                                <button @onclick="close_login_window">Zarejestruj</button>
                         </div>
                     </div>
                 </div>
@@ -132,87 +138,80 @@
 @code {
     private string? SearchString;
 
-    public class UserInterface
+    private string email_input;
+    private string login_input;
+    private string pasword_input;
+    private string pasword_input2;
+
+    bool login_window_visible = false;
+    bool register_window_visible = false;
+
+    bool register_error = false;
+
+
+    public void show_register_window()
     {
-        bool login_window_visible;
-        bool register_window_visible;
-
-        public UserInterface()
-        {
-            login_window_visible = false;
-            register_window_visible = false;
-        }
-
-        public void show_register_window()
-        {
-            register_window_visible = true;
-        }
-
-        public void show_login_window()
-        {
-            login_window_visible = true;
-        }
-
-        public void close_register_window()
-        {
-            register_window_visible = false;
-            userMenager.register();
-        }
-
-        public void close_login_window()
-        {
-            login_window_visible = false;
-        }
-
-        public bool check_visibility(string selected_window)
-        {
-            switch(selected_window)
-            {
-                case "register":
-                    return register_window_visible;
-
-                case "login":
-                    return login_window_visible;
-
-                default:
-                    throw new ArgumentException("Invalid type.");
-            }       
-        }
+        register_window_visible = true;
     }
 
-    public class UserMenager
+    public void show_login_window()
     {
-        public void register() //uploading users data to database
+        login_window_visible = true;
+    }
+
+    public void close_login_window()
+    {
+        login_window_visible = false;
+    }
+
+    public bool check_visibility(string selected_window)
+    {
+        switch(selected_window)
         {
+            case "register":
+                return register_window_visible;
 
-        }
+            case "login":
+                return login_window_visible;
 
-        public void login() //checking if users credentials are in database
-        {
-
-        }
+            default:
+                throw new ArgumentException("Invalid type.");
+        }       
     }
 
 
     private void Search()
     {
-        
+
     }
 
-    UserInterface userInterface = new UserInterface();
-    static UserMenager userMenager = new UserMenager();   
 
-    // Dlaczego to nie dziala????
+    public void close_register_window(bool adding_user)
+    {
+        if (adding_user)
+        {
+            if (pasword_input == pasword_input2)
+            {
+                register_window_visible = false;
+                AddUser();
+            }
+            else
+            {
+                register_error = true;
+            }
+
+        }
+    }
 
     private async Task AddUser()
     {
         User newUser = new User
             {
-                UserName = "test",
-                Email = "test",
-                Password = "test"
+                UserName = email_input,
+                Email = email_input,
+                Password = pasword_input
             };
 
-        await UserController.AddUserAsync(newUser);
+        await UserController.AddUserAsync(newUser);    
     }
 }
