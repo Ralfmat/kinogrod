@@ -81,7 +81,7 @@
                                     <input placeholder="Powtórz hasło" type="password" id="register_password2" @bind="pasword_input2" />
                                 </div>
                                 <div class="loginButtons">
-                                    <button @onclick="() => close_register_window(true)">Zarejestruj</button>
+                                    <button >Zarejestruj</button>
                                 </div>
                                 <div class="loginButtons">
                                     <button @onclick="() => close_register_window(false)">Cofnij</button>
@@ -89,7 +89,7 @@
                                 @if (register_error)
                                 {
                                     <div class="loginButtons">
-                                        <button @onclick="() => close_register_window(false)">Cofnij</button>
+                                        <button>"TEST"</button>
                                     </div>
                                 }
                             </form>
@@ -188,18 +188,10 @@
 
     public void close_register_window(bool adding_user)
     {
-        if (adding_user)
+        if (adding_user && pasword_input == pasword_input2)
         {
-            if (pasword_input == pasword_input2)
-            {
-                register_window_visible = false;
-                AddUser();
-            }
-            else
-            {
-                register_error = true;
-            }
-
+            register_window_visible = false;
+            AddUser();
         }
     }
 
@@ -207,7 +199,7 @@
     {
         User newUser = new User
             {
-                UserName = email_input,
+                UserName = login_input  ,
                 Email = email_input,
                 Password = pasword_input
             };
